@@ -7,15 +7,17 @@
     self',
     ...
   }: let
-    inherit (self'.packages) rust-toolchain python;
+    inherit (self'.packages) rust-toolchain python yarn nodejs dotnet-sdk;
     inherit (self'.legacyPackages) cargoExtraPackages;
 
     devTools = [
-      # rust tooling
       rust-toolchain
       pkgs.bacon
 
       python
+      yarn
+      nodejs
+      dotnet-sdk
     ];
   in {
     devShells = {

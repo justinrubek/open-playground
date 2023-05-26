@@ -21,6 +21,8 @@
         ./flake-parts/rust-toolchain.nix
         ./flake-parts/python.nix
         ./flake-parts/cargo.nix
+        ./flake-parts/nodejs.nix
+        ./flake-parts/dotnet.nix
       ];
     };
 }
