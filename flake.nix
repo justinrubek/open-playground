@@ -23,6 +23,7 @@
         ./flake-parts/cargo.nix
         ./flake-parts/nodejs.nix
         ./flake-parts/dotnet.nix
+        ./flake-parts/java.nix
       ];
     };
 }

@@ -7,7 +7,7 @@
     self',
     ...
   }: let
-    inherit (self'.packages) rust-toolchain python yarn nodejs dotnet-sdk;
+    inherit (self'.packages) rust-toolchain python yarn nodejs dotnet-sdk jdk;
     inherit (self'.legacyPackages) cargoExtraPackages;
 
     devTools = [
@@ -18,6 +18,7 @@
       yarn
       nodejs
       dotnet-sdk
+      jdk
     ];
   in {
     devShells = {
